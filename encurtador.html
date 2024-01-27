@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encurtador de Links</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Cor de fundo minimalista */
+      color: #495057;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #007bff; /* Cor de fundo do header */
+      padding: 10px;
+      color: #fff;
+    }
+    footer {
+      margin-top: auto;
+      background-color: #007bff; /* Cor de fundo do rodapé */
+      padding: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="text-center">
+    <h1>Encurtador de Links</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <div class="form-group">
+            <label for="originalUrl">URL Original</label>
+            <input type="url" class="form-control" id="originalUrl" placeholder="Digite a URL para encurtar" required>
+          </div>
+          <button type="button" onclick="Mostrar()" class="btn btn-primary btn-block">Encurtar</button>
+        </form>
+        <div class="mt-4">
+          <h4>URL Encurtada</h4>
+          <p id="shortenedUrl">Aqui aparecerá a URL encurtada após a submissão do formulário.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <p>&copy; 2024 Encurtador de Links. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="corteLink.js"></script>
+</body>
+</html>
